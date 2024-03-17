@@ -31,7 +31,7 @@ ref.buttons.addEventListener("click",(event)=>{
 
 
 ref.equalButton.addEventListener("click", (event)=>{
-    const value = ref.display.value
+    const value = parseFloat(ref.display.value)
     switch(operator){
         case "/":
             ref.display.value = number/value
@@ -40,7 +40,7 @@ ref.equalButton.addEventListener("click", (event)=>{
             ref.display.value = number*value
             break
         case "+":
-            ref.display.value = number+value
+            ref.display.value = parseFloat(number)+value
             break
         case "-":
             ref.display.value = number-value
